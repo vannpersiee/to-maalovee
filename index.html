@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maaf ya...</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffe6e9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+    h1 {
+      color: #e63946;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+    p {
+      color: #555;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    button {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .btn-minta-maaf {
+      background-color: #e63946;
+      color: white;
+    }
+    .btn-minta-maaf:hover {
+      background-color: #d62839;
+      transform: scale(1.05);
+    }
+    #pesan-rahasia {
+      display: none;
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #fff0f3;
+      border-radius: 10px;
+      color: #c9184a;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>akuu minta maaff yaa... ❤️</h1>
+    <p>aku tau pasti kamuu sebell banget karena kelakuan aku. maafinn aku yaa?</p>
+    
+    <div class="btn-group">
+      <button class="btn-minta-maaf" onclick="maafin()">Maafin Aku</button>
+    </div>
+
+    <div id="pesan-rahasia">
+      makasii uda mau maafin aku! i loveeee uuuu so much sayangggkuu cintaakuu cantikknyaa akuuu! ❤️
+    </div>
+  </div>
+
+  <script>
+    function maafin() {
+      document.getElementById('pesan-rahasia').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
